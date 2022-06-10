@@ -11,7 +11,11 @@ config path
 SSL path
 ```
 ./ssl
-指向到內部 /
-ssl
+指向到內部 
+/ssl
 ```
 
+安裝後設定
+```
+./setup
+```
