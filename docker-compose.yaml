@@ -12,7 +12,11 @@ services:
       - ./conf.d:/etc/nginx/conf.d:ro
       - ./ssl:/ssl:ro
     networks:
-      - default
-networks:
-  default:
+      - vpcbr
 
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.66.65.0/24
