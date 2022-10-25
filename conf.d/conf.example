@@ -12,7 +12,6 @@ server {
     gzip_types text/plain application/xml text/css application/javascript;
     gzip_min_length 1000;
 
-    ssl on;
     ssl_certificate     /ssl/localhost/localhost.crt;
     ssl_certificate_key /ssl/localhost/localhost.key;
     ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
